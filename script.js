@@ -38,6 +38,7 @@ function Alvo(x, y, raio) {
                 window.alert('FIM DE JOGO!')
                 window.alert(`Precisão: ${precisao.toFixed(2)}% | Acertos: ${acertos}`)
                 alvos=[]
+                vidas=4
                 acertos=0
                 tiros=0
                 precisao=0
