@@ -32,24 +32,6 @@ function Alvo(x, y, raio) {
         this.desenha()
     }
 
-    this.perdeVida = () => {
-        if (this.raio < 1) {
-            vidas -= 1
-            alvos.shift()
-
-            if(vidas==0){
-                window.alert('FIM DE JOGO!')
-                window.alert(`Precisão: ${precisao.toFixed(2)}% | Acertos: ${acertos}`)
-                alvos=[]
-                vidas=4
-                acertos=0
-                tiros=0
-                precisao=0
-                velocidadeDeJogo=1000
-            }
-        }
-    }
-
     this.alteraTamanho = () => {
         if (this.raio >= RAIO_MAXIMO)
             this.aumenta = false
