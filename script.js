@@ -108,7 +108,7 @@ function fimDeJogo() {
     menu.classList.remove('hide-gameover')
 
     var recorde = getRecordeLocal()
-    if (recorde < acertos)
+    if (recorde < acertos || isNaN(recorde))
         localStorage.setItem('recorde', acertos)
 
     recordeEl.textContent = `${getRecordeLocal()}`
