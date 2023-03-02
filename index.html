@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="./aimIcone.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="./aimIcone.ico" type="image/x-icon">
 </head>
+
 <body>
-    <canvas class="canvas"></canvas>
-    <script src="./script.js"></script>
+  <canvas class="canvas hide-canvas"></canvas>
+  <div class="gameover">
+    <p class="gameover__recorde">Recorde: <span class="recorde"></span></p>
+    <h1 class="nome_jogo">Acerte os alvos!</h1>
+    <p class="gameover__pontuacao">Pontuação: <span class="pontuacao"></span></p>
+    <p class="gameover__precisao">Precisão: <span class="precisao"></span></p><!--distancia entre precisao e recorde no css-->
+    <button class="btn_jogar">Jogar</button>
+  </div>
+  <script src="./script.js"></script>
 </body>
+
 </html>
