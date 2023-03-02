@@ -151,7 +151,10 @@ function animaJogo() {
 }
 //---------------------EVENT LISTENERS------------------------
 window.addEventListener("load", () => {
-    recordeEl.textContent = `${getRecordeLocal()}`
+    if(isNaN(getRecordeLocal()))
+        recordeEl.textContent = `0`
+    else
+        recordeEl.textContent = `${getRecordeLocal()}`
     pontuacaoEl.textContent = `0`
     precisaoEl.textContent = `0`
 });
